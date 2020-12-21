@@ -1,0 +1,105 @@
+.first-header h1{
+    font-size: 45px;
+    margin: 10px;
+    margin-top: 40px;
+    margin-left: 25px;
+}
+
+.first-header h2{
+    font-size: 30px;
+    margin: 10px;
+    margin-top: 35px;
+    margin-left: 25px;
+}
+
+.application-form label{
+    margin-top: 20px;
+ }
+
+.application-form :nth-child(4){
+    margin-bottom: 20px;
+}
+
+.application-form h2{
+    font-size: 25px;
+}
+
+
+form input {
+    margin: 10px;
+}
+
+.sex_header{
+    margin-left: 25px;
+    margin-top: 30px;
+}
+
+.radio-btn-container {
+    display: flex;
+    margin-top: -5px;
+    margin-left: 16px;
+    margin-right: 140px;
+    justify-content: space-between;
+}
+
+.h2_git{
+    margin-left: 25px;
+    margin-top: 30px;
+}
+
+.github_header input{
+    margin-bottom: 35px;
+    width:75%;
+}
+
+.privacy button {
+  border:none;
+  border-bottom: 1px solid blue;
+  color: blue;
+  background-color: white;
+  padding: 0; 
+  outline: 0;
+}
+
+
+.privacy{
+    display: flex; 
+}
+
+.privacy_font{
+    font-size: 14.5px;
+    margin-left: 10px;
+    margin-top:6px;
+}
+
+.btn_send{
+    display: flex;
+    justify-content: center;
+}
+
+.btn_send button{
+    width: 87%;
+}
+
+.modal_display button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 87%;
+    margin: 10px;
+}
+
+.modal_display {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.modal_display p{
+    font-size: 20px;
+}
+
+.modal_display h2 {
+    font-size: 30px;
+}

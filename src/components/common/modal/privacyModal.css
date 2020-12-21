@@ -1,0 +1,19 @@
+.content{
+    height: 250px;
+    overflow: scroll;
+    font-size: 17px;
+}
+
+.policy_content{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.privacy_text_content{
+    padding-bottom: 10px;
+}
+
+.content span{
+    font-weight: 700;
+}
