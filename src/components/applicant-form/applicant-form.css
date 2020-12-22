@@ -1,35 +1,32 @@
-.first-header h1{
+.applicantionHeader {
     font-size: 45px;
     margin: 10px;
     margin-top: 40px;
     margin-left: 25px;
 }
 
-.first-header h2{
+
+.personalDataHeader {
     font-size: 30px;
     margin: 10px;
     margin-top: 35px;
     margin-left: 25px;
 }
 
-.application-form label{
+.applicationForm label {
     margin-top: 20px;
  }
 
-.application-form :nth-child(4){
+.mailZone{
     margin-bottom: 20px;
 }
 
-.application-form h2{
+.applicationForm h2 {
     font-size: 25px;
 }
 
 
-form input {
-    margin: 10px;
-}
-
-.sex_header{
+.sexHeader {
     margin-left: 25px;
     margin-top: 30px;
 }
@@ -37,22 +34,30 @@ form input {
 .radio-btn-container {
     display: flex;
     margin-top: -5px;
-    margin-left: 16px;
+    margin-left: 25px;
     margin-right: 140px;
     justify-content: space-between;
 }
 
-.h2_git{
+.radio-btn-container label {
+    margin-left: 10px;
+}
+
+.githubHeader {
     margin-left: 25px;
     margin-top: 30px;
 }
 
-.github_header input{
+.githubBlock input {
     margin-bottom: 35px;
     width:75%;
 }
 
-.privacy button {
+.githubBlock input:hover {
+    width: 95%;
+}
+
+.privacyBlock button {
   border:none;
   border-bottom: 1px solid blue;
   color: blue;
@@ -62,26 +67,39 @@ form input {
 }
 
 
-.privacy{
+.privacyBlock {
     display: flex; 
 }
 
-.privacy_font{
-    font-size: 14.5px;
-    margin-left: 10px;
+.privacyText {
+    font-size: 13px;
+    margin-left: 20px;
     margin-top:6px;
 }
 
-.btn_send{
+.privacyText p:hover { 
+    cursor: pointer;
+}
+
+.checkBox {
+    margin-left: 13px;
+    height: 13px;
+    width: 13px;
+    position: relative;
+    top: 2.5px;
+    border-radius:none;
+}
+
+.btnSend{
     display: flex;
     justify-content: center;
 }
 
-.btn_send button{
+.btnSend button{
     width: 87%;
 }
 
-.modal_display button{
+.modalDisplay button{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,16 +108,16 @@ form input {
     margin: 10px;
 }
 
-.modal_display {
+.modalDisplay {
     display: flex;
     flex-direction: column;
    
 }
 
-.modal_display p{
+.modalDisplay p{
     font-size: 20px;
 }
 
-.modal_display h2 {
+.modalDisplay h2 {
     font-size: 30px;
 }

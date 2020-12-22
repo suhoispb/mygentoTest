@@ -3,8 +3,8 @@ import Dropzone from 'react-dropzone';
 import './file-input.css'
 
 class FileInput extends Component {
-  constructor(props) {
-    super(props);
+  constructor({onChange, deleteArr}) {
+    super({onChange, deleteArr});
     this.state = {
       files: []
     };
@@ -17,7 +17,7 @@ class FileInput extends Component {
     this.setState({files:''});
   }
 
-  checkFiles = (deleteResume) => this.state.files.map( file => (
+  checkFiles = () => this.state.files.map( file => (
     <div className="styledChecFiles">
     <li key={file.path}>
       {file.path} 
@@ -26,9 +26,8 @@ class FileInput extends Component {
     </div>
   ));
   render() {
-    const {closeDropZone} = this.props;
     return (
-      <Dropzone onDrop={this.onDrop} >
+      <Dropzone onDrop={this.onDrop}>
         {({getRootProps, getInputProps}) => (
           <section className="container">
             
