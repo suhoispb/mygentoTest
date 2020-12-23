@@ -7,13 +7,7 @@
     width: 95%;
     
 }
-.plus {
-    height: 0px;
-    width: 0px;
-    font-size: 30px;
-    position: relative;
-    top: -12px;
-}
+
 .loading_header {
     margin-right:  50px;
 }

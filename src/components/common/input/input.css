@@ -1,12 +1,12 @@
 
-.input-container label {
+.inputContainer label {
     margin:0%;
 }
-.input-container input {
+.inputContainer input {
     margin:0%;
 }
 
-.input-container{
+.inputContainer{
     width: 87%;
     margin: 0 auto;
 }

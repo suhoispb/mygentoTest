@@ -7,7 +7,7 @@ const CheckBox = (props) => {
     return(
         
         <div>
-            <input type="checkbox" className="checkBox" onChange={(event)=>{onChange()}} checked={value} value="a1"></input>
+            <input type="checkbox" className="checkBox" onChange={(event)=>{onChange()}} checked={value} value="a1" ></input>
             {children}
         </div>
     )

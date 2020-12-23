@@ -1,19 +1,32 @@
-.content{
+.content {
     height: 250px;
     overflow: scroll;
     font-size: 17px;
 }
 
-.policy_content{
-    font-size: 25px;
+.policyHeader {
+    font-size: 20px;
     font-weight: 700;
     margin-bottom: 30px;
 }
 
-.privacy_text_content{
+.privacyTextContent {
     padding-bottom: 10px;
 }
 
-.content span{
+.content span {
     font-weight: 700;
+}
+
+.policyBlock {
+    display: flex;
+    justify-content: space-between;
+}
+
+.policyBlock button {
+    color: blue;
+    height: 30px;
+    position: relative;;
+    top: -15px;
+    
 }

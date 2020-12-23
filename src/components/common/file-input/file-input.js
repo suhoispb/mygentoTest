@@ -36,6 +36,7 @@ class FileInput extends Component {
                 <input {...getInputProps()} />
                 <div className="plus">+</div>
                 <div className="loading">Загрузите резюме</div>
+                <div></div>
                 </div>
             )
             }    
