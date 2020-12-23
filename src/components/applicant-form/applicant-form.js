@@ -33,8 +33,9 @@ class  ApplicantForm extends Component {
         this.closeModal=this.closeModal.bind(this)
         this.setPrivacyModal=this.setPrivacyModal.bind(this)
         this.closePrivacyModal=this.closePrivacyModal.bind(this)
-        this.setDeleteArr=this.setDeleteArr.bind(this)
+        
         this.onDropZone=this.onDropZone.bind(this)
+        this.deleteResume=this.deleteResume.bind(this)
     }
 
 
@@ -90,13 +91,9 @@ class  ApplicantForm extends Component {
         })
     };
 
-    setDeleteArr = () => {
-        if (this.state.files.length>0) {
-            this.closeModal(true)
-        } else {
-            console.log('boshka ne varit')
-        }
-    } 
+    deleteResume = () => {
+        this.setState({files:[]});
+      }
 
     
     render() {
@@ -111,16 +108,17 @@ class  ApplicantForm extends Component {
 
 
                 <div className="nameSurname">
-                <Input label="Имя*" onChange={ this.onNameChange } value={this.state.name} placeholder="Имя"/>
-                <Input label="Фамилия*" onChange={ this.onSurnameChange } value={this.state.surname} placeholder="Фамилия"/>
+                <Input required  name="firstName" label="Имя*" onChange={ this.onNameChange } value={this.state.name} placeholder="Имя"/>
+                <Input required  name="lastName" label="Фамилия*" onChange={ this.onSurnameChange } value={this.state.surname} placeholder="Фамилия"/>
                 </div>
 
 
                 <div className="mailAndDropzone">
                 <div className="mailZone">
-                <Input label="Электронная почта*" onChange={ this.onEmailChange } value={this.state.email} type="email" placeholder="Электронная почта"/>
+                <Input required  name="email" label="Электронная почта*" onChange={ this.onEmailChange } value={this.state.email} type="email" placeholder="Электронная почта"/>
                 </div>
-                <FileInput onChange={this.onDropZone} deleteArr={this.setDeleteArr}/>
+                <FileInput onChange={this.onDropZone} arrWithFiles={this.state.files}
+                deleteResume={this.deleteResume}/>
                 </div>
                 </div>
 
@@ -130,6 +128,8 @@ class  ApplicantForm extends Component {
                 <div className="radio-btn-container" >
 
                     <RadioButton 
+                        name="sex"
+                        required
                         changed={ this.radioChangeHandler } 
                         id="1" 
                         isSelected={ this.state.sex === "Male" } 
@@ -138,6 +138,7 @@ class  ApplicantForm extends Component {
                     />
 
                     <RadioButton
+                        name="sex"
                         changed={ this.radioChangeHandler } 
                         id="2" 
                         isSelected={ this.state.sex === "Female" } 
@@ -150,19 +151,19 @@ class  ApplicantForm extends Component {
 
                 <div className="githubBlock">
                 <h2 className="githubHeader">Github</h2>
-                <Input label="Вставьте ссылку на Github*" onChange={ this.onGithubChange } value={this.state.githubUrl} placeholder="Вставьте ссылку на Github"/>
+                <Input required  name="githubUrl" label="Вставьте ссылку на Github*" onChange={ this.onGithubChange } value={this.state.githubUrl} placeholder="Вставьте ссылку на Github"/>
                 </div>
                 
                 <div className="privacyBlock" >
                     <div className="checkBox">
-                    <CheckBox onChange={ this.onPrivacyCheck} value={this.state.isPrivacyChecked}/>
+                    <CheckBox required onChange={ this.onPrivacyCheck} value={this.state.isPrivacyChecked}/>
                     </div>
                     <div className="privacyText">
                         <p>* Я согласен с <button type="button" onClick={ () => this.setPrivacyModal() } >политикой конфиденциальности</button></p>
                     </div>
                 </div>
 
-
+                
                 <div className="btnSend">
                 <button type="submit" className=" btn btn-primary">Отправить</button>
                 </div>
@@ -172,10 +173,11 @@ class  ApplicantForm extends Component {
             <div className="modalDisplay">
             <SuccessModal active={this.state.isModalActive} closeModal={this.closeModal} name={this.state.name}>          
             </SuccessModal>
-            <PrivacyModal active={this.state.isPrivacyModalActive} closePrivacyModal={this.closePrivacyModal}>  
+            <PrivacyModal active={this.state.isPrivacyModalActive} closeModal={this.closePrivacyModal}>  
             </PrivacyModal>
             </div>
             </div>
+           
         )
     }
     

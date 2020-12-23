@@ -3,37 +3,28 @@ import Dropzone from 'react-dropzone';
 import './file-input.css'
 
 class FileInput extends Component {
-  constructor({onChange, deleteArr}) {
-    super({onChange, deleteArr});
-    this.state = {
-      files: []
-    };
-    this.onDrop = (files) => {
-      this.setState({files})
-    };
+  constructor({props}) {
+    super({props});
   }
-
-  deleteResume = () => {
-    this.setState({files:''});
-  }
-
-  checkFiles = () => this.state.files.map( file => (
+  
+  checkFiles = () => this.props.arrWithFiles.map( file => (
     <div className="styledChecFiles">
     <li key={file.path}>
       {file.path} 
     </li>
-    <button onClick = { () => this.deleteResume(true)} type="button" className="btnResume">X</button>
+    <button onClick = { () => this.props.deleteResume(true)} type="button" className="btnResume">X</button>
     </div>
   ));
   render() {
-    return (
-      <Dropzone onDrop={this.onDrop}>
+    const {onChange, arrWithFiles, deleteResume} = this.props;
+    return ( 
+      <Dropzone onDrop={onChange} arrWithFiles={arrWithFiles} deleteResume={deleteResume}>
         {({getRootProps, getInputProps}) => (
           <section className="container">
             
-            {   this.state.files.length===0 &&(
+            {   arrWithFiles.length===0 &&(
                 <div {...getRootProps({className: 'dropzone'})}>
-                <input {...getInputProps()} />
+                <input {...getInputProps()}  />
                 <div className="plus">+</div>
                 <div className="loading">Загрузите резюме</div>
                 <div></div>
@@ -41,7 +32,7 @@ class FileInput extends Component {
             )
             }    
             <aside>
-              {this.state.files.length>0 &&(
+              {arrWithFiles.length>0 &&(
                 <div className="renderFiles">
                     {this.checkFiles()}
                 </div>
@@ -56,9 +47,3 @@ class FileInput extends Component {
 }
 
 export default FileInput;
-
-
-// function StatusDescription(props: {status: Status;}): 
-//     div {
-//     return {props.status};
-// }

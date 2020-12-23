@@ -2,14 +2,14 @@ import React from 'react'
 import Modal from './modal'
 import './privacyModal.css'
 
-const PrivacyModal = ({active, closePrivacyModal}) => {
+const PrivacyModal = ({active, closeModal}) => {
     
     return(
-            <Modal active={active} closePrivacyModal={closePrivacyModal}>
+            <Modal active={active} closeModal={closeModal}>
                 <div className="privacyModalContent">
                             <div className="policyBlock">
                             <div className="policyHeader">Политика конфиденциальности</div>
-                            <button onClick = { () => closePrivacyModal(true)} type="button" className="btn">X</button>
+                            <button onClick = { () => closeModal(true)} type="button" className="btn">X</button>
                             </div>
                             <div className="content"><span>1.Общие положения</span>
                             <br/>
@@ -31,7 +31,7 @@ const PrivacyModal = ({active, closePrivacyModal}) => {
                                 Оператор может получить о посетителях веб-сайта.
                             </div>
                             </div>
-                            <button onClick = { () => closePrivacyModal(true)} type="button" className="btn btn-primary">Я согласен</button>               
+                            <button onClick = { () => closeModal(true)} type="button" className="btn btn-primary">Я согласен</button>               
             
                             </div>
             </Modal>

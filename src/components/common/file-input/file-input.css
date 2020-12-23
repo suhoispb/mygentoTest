@@ -34,18 +34,6 @@ aside{
     
 }
 
-.styledChecFiles:hover{
-    background-color: rgb(131, 170, 255);
-}
-
-.styledChecFiles button:hover{
-    background-color: rgb(131, 170, 255)
-}
-
-
-
-
-
 .dropzone{
   flex: 1;
   display: flex;  
