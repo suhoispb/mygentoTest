@@ -8,12 +8,12 @@ const PrivacyModal = ({active, closeModal}) => {
             <Modal active={active} closeModal={closeModal}>
                 <div className="privacyModalContent">
                             <div className="policyBlock">
-                            <div className="policyHeader">Политика конфиденциальности</div>
-                            <button onClick = { () => closeModal(true)} type="button" className="btn">X</button>
+                                <div className="policyHeader">Политика конфиденциальности</div>
+                                <button onClick = { () => closeModal(true)} type="button" className="btn">X</button>
                             </div>
                             <div className="content"><span>1.Общие положения</span>
                             <br/>
-                            <div className="privacyTextContent">
+                                <div className="privacyTextContent">
                                 Настоящая политика обработки персональных данных составлена в
                                 соответствии с требованиями Федерального закона от 27.07.2006.
                                 №152-Ф3 «О персональных данных» и опроделяет порядок обработки
@@ -29,11 +29,11 @@ const PrivacyModal = ({active, closeModal}) => {
                                1.2.Настоящая политика Оператора в отношении обработки персональных
                                 данных (далее - Политик) применяется ко всей информации, которую
                                 Оператор может получить о посетителях веб-сайта.
-                            </div>
+                                </div>
                             </div>
                             <button onClick = { () => closeModal(true)} type="button" className="btn btn-primary">Я согласен</button>               
             
-                            </div>
+                </div>
             </Modal>
         
     )

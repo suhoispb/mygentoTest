@@ -7,7 +7,14 @@ class Input extends Component {
         return(
             <div className="inputContainer">
                 <label> {label} </label>
-                <input className="common form-control" onChange={(event)=>{onChange (event.target.value)}} type={type} placeholder={placeholder} value={value} name={name} required={required}></input>  
+                <input className="common form-control" 
+                       onChange={(event)=>{onChange (event.target.value)}} 
+                       type={type} 
+                       placeholder={placeholder} 
+                       value={value} 
+                       name={name} 
+                       required={required}>
+                </input>  
             </div>
         );
     };

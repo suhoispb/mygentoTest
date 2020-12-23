@@ -20,14 +20,14 @@ class FileInput extends Component {
     return ( 
       <Dropzone onDrop={onChange} arrWithFiles={arrWithFiles} deleteResume={deleteResume}>
         {({getRootProps, getInputProps}) => (
-          <section className="container">
+          <section className="dropzoneContainer">
             
             {   arrWithFiles.length===0 &&(
                 <div {...getRootProps({className: 'dropzone'})}>
-                <input {...getInputProps()}  />
-                <div className="plus">+</div>
-                <div className="loading">Загрузите резюме</div>
-                <div></div>
+                    <input {...getInputProps()}  />
+                        <div className="plus">+</div>
+                        <div className="loading">Загрузите резюме</div>
+                        <div></div>
                 </div>
             )
             }    

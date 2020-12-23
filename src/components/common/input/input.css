@@ -5,8 +5,6 @@
 .inputContainer input {
     margin:0%;
 }
-
 .inputContainer{
-    width: 87%;
-    margin: 0 auto;
+    margin: 0 25px;
 }

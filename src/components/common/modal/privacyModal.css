@@ -23,10 +23,9 @@
     justify-content: space-between;
 }
 
-.policyBlock button {
-    color: blue;
+.btn {
+    
     height: 30px;
     position: relative;;
     top: -15px;
-    
 }

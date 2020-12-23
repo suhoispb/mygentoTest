@@ -5,6 +5,10 @@
     margin-left: 25px;
 }
 
+.applicationForm {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 .personalDataHeader {
     font-size: 30px;
@@ -13,12 +17,24 @@
     margin-left: 25px;
 }
 
+.personalDataContent {
+    width: 100%;
+}
+
+.nameSurname {
+    width: 100%;
+}
+
+.mailAndDropzone {
+    width: 100%;
+}
+
 .applicationForm label {
     margin-top: 20px;
  }
 
 .mailZone{
-    margin-bottom: 20px;
+    margin-bottom: 43px;
 }
 
 .applicationForm h2 {
@@ -33,14 +49,13 @@
 
 .radio-btn-container {
     display: flex;
-    margin-top: -5px;
-    margin-left: 25px;
-    margin-right: 140px;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin: 0 25px;
 }
 
 .radio-btn-container label {
     margin-left: 10px;
+    margin-top: 0;
 }
 
 .githubHeader {
@@ -53,9 +68,9 @@
     width:75%;
 }
 
-.githubBlock input:hover {
+/* .githubBlock input:hover {
     width: 95%;
-}
+} */
 
 .privacyBlock button {
   border:none;
@@ -96,7 +111,9 @@
 }
 
 .btnSend button{
-    width: 87%;
+    width: 100%;
+    margin: 0 25px;
+    margin-top: 10px;
 }
 
 .modalDisplay button{
@@ -111,7 +128,6 @@
 .modalDisplay {
     display: flex;
     flex-direction: column;
-   
 }
 
 .modalDisplay p{
@@ -120,4 +136,18 @@
 
 .modalDisplay h2 {
     font-size: 30px;
+}
+
+@media screen and (min-width: 900px) {
+    .personalDataContent {
+        display: flex;
+    }
+
+    .radio-btn-container {
+        flex-direction: column;
+    }
+
+    .btnSend button{
+        max-width: 500px;
+    }
 }

@@ -1,11 +1,13 @@
-
-.container p{
-    margin: 0px;
-   
+.dropzoneContainer{
+    width: 100%;
+    padding: 0 25px;
 }
-.container{
-    width: 95%;
-    
+.plus {
+    height: 0px;
+    width: 0px;
+    font-size: 30px;
+    position: relative;
+    top: -12px;
 }
 
 .loading_header {
@@ -34,13 +36,21 @@ aside{
     
 }
 
+.styledChecFiles:hover{
+    background-color: rgb(131, 170, 255);
+}
+
+.styledChecFiles button:hover{
+    background-color: rgb(131, 170, 255)
+}
+
 .dropzone{
   flex: 1;
   display: flex;  
   justify-content: space-around;
   padding: 5px;
-  border-width: 2;
-  border-radius: 3;
+  border-width: 2px;
+  border-radius: 3px;
   border-color: #eeeeee;
   border-style: dotted;
   background-color: #fafafa;
