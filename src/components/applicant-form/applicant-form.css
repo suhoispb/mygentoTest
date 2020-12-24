@@ -53,6 +53,10 @@
     margin: 0 25px;
 }
 
+.radio-btn-container :first-child {
+    margin-left: -30px;
+}
+
 .radio-btn-container label {
     margin-left: 10px;
     margin-top: 0;
@@ -68,9 +72,9 @@
     width:75%;
 }
 
-/* .githubBlock input:hover {
+.githubBlock input:hover {
     width: 95%;
-} */
+}
 
 .privacyBlock button {
   border:none;
@@ -143,11 +147,15 @@
         display: flex;
     }
 
-    .radio-btn-container {
-        flex-direction: column;
+    .radio-btn-container :first-child {
+        margin-left: -165px;
     }
 
     .btnSend button{
-        max-width: 500px;
+        max-width: 400px;
+    }
+
+    .githubBlock input:hover {
+        width: 75%;
     }
 }

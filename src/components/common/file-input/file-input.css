@@ -30,10 +30,9 @@ aside{
 
 .styledChecFiles button{
     border:none;
-    background-color: white;
     margin:0;
     padding: 0;
-    
+    outline: none;
 }
 
 .styledChecFiles:hover{
@@ -58,3 +57,17 @@ aside{
   outline: none;
   transition: border .24s ease-in-out;
 }
+
+.styledChecFiles button {
+  background-color: rgb(131, 170, 255);
+  height: 15px;
+  width: 15px;
+  display: none;
+  background-size: cover; 
+}
+
+.styledChecFiles:hover button{
+    display: block; 
+    background-color: rgb(131, 170, 255);
+}
+

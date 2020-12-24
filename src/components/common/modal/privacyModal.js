@@ -8,8 +8,10 @@ const PrivacyModal = ({active, closeModal}) => {
             <Modal active={active} closeModal={closeModal}>
                 <div className="privacyModalContent">
                             <div className="policyBlock">
+                                <div></div>
                                 <div className="policyHeader">Политика конфиденциальности</div>
-                                <button onClick = { () => closeModal(true)} type="button" className="btn">X</button>
+                                <div><button onClick = { () => closeModal(true)} type="button" 
+                                             className="btn"><p>&#x2716;</p></button></div>
                             </div>
                             <div className="content"><span>1.Общие положения</span>
                             <br/>
@@ -29,9 +31,18 @@ const PrivacyModal = ({active, closeModal}) => {
                                1.2.Настоящая политика Оператора в отношении обработки персональных
                                 данных (далее - Политик) применяется ко всей информации, которую
                                 Оператор может получить о посетителях веб-сайта.
+
+                                1.1.Оператор ставит своей важнейшей целью и условием осуществления
+                                своей деятельности соблюдение прав и свобод человека и гражданина при
+                                обработке его персональных данных, в том числе защиты прав на
+                                неприкоснованность частной жизни, личную и семейную тайну;
+
+                               1.2.Настоящая политика Оператора в отношении обработки персональных
+                                данных (далее - Политик) применяется ко всей информации, которую
+                                Оператор может получить о посетителях веб-сайта.
                                 </div>
                             </div>
-                            <button onClick = { () => closeModal(true)} type="button" className="btn btn-primary">Я согласен</button>               
+                            <button onClick = { () => closeModal(true)} type="button" className="btnI btn-primary">Я согласен</button>               
             
                 </div>
             </Modal>

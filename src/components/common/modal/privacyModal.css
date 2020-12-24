@@ -8,6 +8,7 @@
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 30px;
+    
 }
 
 .privacyTextContent {
@@ -20,12 +21,15 @@
 
 .policyBlock {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .btn {
-    
     height: 30px;
     position: relative;;
     top: -15px;
+}
+
+.btnI {
+    margin-top: 10px;
 }

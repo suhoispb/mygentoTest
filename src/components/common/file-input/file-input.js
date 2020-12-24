@@ -12,7 +12,7 @@ class FileInput extends Component {
     <li key={file.path}>
       {file.path} 
     </li>
-    <button onClick = { () => this.props.deleteResume(true)} type="button" className="btnResume">X</button>
+    <button onClick = { () => this.props.deleteResume(true)} type="button" className="btnResume">&#x2716;</button>
     </div>
   ));
   render() {
