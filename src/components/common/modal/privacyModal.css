@@ -24,12 +24,6 @@
     justify-content: space-around;
 }
 
-.btn {
-    height: 30px;
-    position: relative;;
-    top: -15px;
-}
-
 .btnI {
     margin-top: 10px;
 }

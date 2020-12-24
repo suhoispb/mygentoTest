@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/suhoispb/mygentoTest/static/css/main.1bcc2303.chunk.css",
+    "main.css": "/suhoispb/mygentoTest/static/css/main.82997239.chunk.css",
     "main.js": "/suhoispb/mygentoTest/static/js/main.f00816de.chunk.js",
     "main.js.map": "/suhoispb/mygentoTest/static/js/main.f00816de.chunk.js.map",
     "runtime-main.js": "/suhoispb/mygentoTest/static/js/runtime-main.7c77a8b9.js",
@@ -8,13 +8,13 @@
     "static/js/2.18ec32d0.chunk.js": "/suhoispb/mygentoTest/static/js/2.18ec32d0.chunk.js",
     "static/js/2.18ec32d0.chunk.js.map": "/suhoispb/mygentoTest/static/js/2.18ec32d0.chunk.js.map",
     "index.html": "/suhoispb/mygentoTest/index.html",
-    "static/css/main.1bcc2303.chunk.css.map": "/suhoispb/mygentoTest/static/css/main.1bcc2303.chunk.css.map",
+    "static/css/main.82997239.chunk.css.map": "/suhoispb/mygentoTest/static/css/main.82997239.chunk.css.map",
     "static/js/2.18ec32d0.chunk.js.LICENSE.txt": "/suhoispb/mygentoTest/static/js/2.18ec32d0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.7c77a8b9.js",
     "static/js/2.18ec32d0.chunk.js",
-    "static/css/main.1bcc2303.chunk.css",
+    "static/css/main.82997239.chunk.css",
     "static/js/main.f00816de.chunk.js"
   ]
 }
